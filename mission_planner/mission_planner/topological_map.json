@@ -1,0 +1,72 @@
+{
+    "nodes": {
+        "start": [
+            -8.0,
+            2.0
+        ],
+        "charger_capsule": [
+            8.75926713572498,
+            -8.514144413266123
+        ],
+        "charger_capsule_0": [
+            -8.65552891831203,
+            8.400867104829054
+        ],
+        "delivery_cylinder": [
+            5.490753416034863,
+            3.519235485374498
+        ],
+        "delivery_cylinder_0": [
+            -0.4815779836763232,
+            8.537787696642724
+        ],
+        "delivery_cylinder_1": [
+            4.069318860899463,
+            -4.023768750762061
+        ]
+    },
+    "graph": {
+        "start": {
+            "charger_capsule": 19.78,
+            "charger_capsule_0": 6.43,
+            "delivery_cylinder": 13.58,
+            "delivery_cylinder_0": 9.96,
+            "delivery_cylinder_1": 13.49
+        },
+        "charger_capsule": {
+            "start": 19.78,
+            "charger_capsule_0": 24.28,
+            "delivery_cylinder": 12.47,
+            "delivery_cylinder_0": 19.39,
+            "delivery_cylinder_1": 6.49
+        },
+        "charger_capsule_0": {
+            "start": 6.43,
+            "charger_capsule": 24.28,
+            "delivery_cylinder": 14.96,
+            "delivery_cylinder_0": 8.18,
+            "delivery_cylinder_1": 17.78
+        },
+        "delivery_cylinder": {
+            "start": 13.58,
+            "charger_capsule": 12.47,
+            "charger_capsule_0": 14.96,
+            "delivery_cylinder_0": 7.8,
+            "delivery_cylinder_1": 7.68
+        },
+        "delivery_cylinder_0": {
+            "start": 9.96,
+            "charger_capsule": 19.39,
+            "charger_capsule_0": 8.18,
+            "delivery_cylinder": 7.8,
+            "delivery_cylinder_1": 13.36
+        },
+        "delivery_cylinder_1": {
+            "start": 13.49,
+            "charger_capsule": 6.49,
+            "charger_capsule_0": 17.78,
+            "delivery_cylinder": 7.68,
+            "delivery_cylinder_0": 13.36
+        }
+    }
+}

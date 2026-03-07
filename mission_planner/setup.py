@@ -24,7 +24,8 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'battery_simulator = mission_planner.battery_simulator:main'
+            'battery_simulator = mission_planner.battery_simulator:main',
+            'mission_planner = mission_planner.mission_planner:main'
         ],
     },
 )
