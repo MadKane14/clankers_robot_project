@@ -1,0 +1,9 @@
+/home/madkane/ros2_ws/src/clankers_robot_project/build/my_robot_nav/CMakeFiles/uninstall.dir
+/home/madkane/ros2_ws/src/clankers_robot_project/build/my_robot_nav/CMakeFiles/my_robot_nav_uninstall.dir
+/home/madkane/ros2_ws/src/clankers_robot_project/build/my_robot_nav/CMakeFiles/test.dir
+/home/madkane/ros2_ws/src/clankers_robot_project/build/my_robot_nav/CMakeFiles/edit_cache.dir
+/home/madkane/ros2_ws/src/clankers_robot_project/build/my_robot_nav/CMakeFiles/rebuild_cache.dir
+/home/madkane/ros2_ws/src/clankers_robot_project/build/my_robot_nav/CMakeFiles/list_install_components.dir
+/home/madkane/ros2_ws/src/clankers_robot_project/build/my_robot_nav/CMakeFiles/install.dir
+/home/madkane/ros2_ws/src/clankers_robot_project/build/my_robot_nav/CMakeFiles/install/local.dir
+/home/madkane/ros2_ws/src/clankers_robot_project/build/my_robot_nav/CMakeFiles/install/strip.dir

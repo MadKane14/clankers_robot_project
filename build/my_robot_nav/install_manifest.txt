@@ -1,0 +1,16 @@
+/home/madkane/ros2_ws/src/clankers_robot_project/install/my_robot_nav/share/my_robot_nav/config/nav2_params.yaml
+/home/madkane/ros2_ws/src/clankers_robot_project/install/my_robot_nav/share/ament_index/resource_index/package_run_dependencies/my_robot_nav
+/home/madkane/ros2_ws/src/clankers_robot_project/install/my_robot_nav/share/ament_index/resource_index/parent_prefix_path/my_robot_nav
+/home/madkane/ros2_ws/src/clankers_robot_project/install/my_robot_nav/share/my_robot_nav/environment/ament_prefix_path.sh
+/home/madkane/ros2_ws/src/clankers_robot_project/install/my_robot_nav/share/my_robot_nav/environment/ament_prefix_path.dsv
+/home/madkane/ros2_ws/src/clankers_robot_project/install/my_robot_nav/share/my_robot_nav/environment/path.sh
+/home/madkane/ros2_ws/src/clankers_robot_project/install/my_robot_nav/share/my_robot_nav/environment/path.dsv
+/home/madkane/ros2_ws/src/clankers_robot_project/install/my_robot_nav/share/my_robot_nav/local_setup.bash
+/home/madkane/ros2_ws/src/clankers_robot_project/install/my_robot_nav/share/my_robot_nav/local_setup.sh
+/home/madkane/ros2_ws/src/clankers_robot_project/install/my_robot_nav/share/my_robot_nav/local_setup.zsh
+/home/madkane/ros2_ws/src/clankers_robot_project/install/my_robot_nav/share/my_robot_nav/local_setup.dsv
+/home/madkane/ros2_ws/src/clankers_robot_project/install/my_robot_nav/share/my_robot_nav/package.dsv
+/home/madkane/ros2_ws/src/clankers_robot_project/install/my_robot_nav/share/ament_index/resource_index/packages/my_robot_nav
+/home/madkane/ros2_ws/src/clankers_robot_project/install/my_robot_nav/share/my_robot_nav/cmake/my_robot_navConfig.cmake
+/home/madkane/ros2_ws/src/clankers_robot_project/install/my_robot_nav/share/my_robot_nav/cmake/my_robot_navConfig-version.cmake
+/home/madkane/ros2_ws/src/clankers_robot_project/install/my_robot_nav/share/my_robot_nav/package.xml
