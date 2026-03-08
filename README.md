@@ -32,7 +32,7 @@ source install/setup.bash
 ---
 
 ### Phase 1: Autonomous Mapping (Active SLAM)
-To map a new environment from scratch, you will need 5 separate terminals.
+To map a new environment from scratch, you will need 5 separate terminals. Always ensure you are in the root of your workspace (`~/ros2_ws`) before running these.
 
 **Terminal 1: The Physics Engine**
 Launch your Gazebo simulation to spawn the robot and the world.
@@ -48,15 +48,15 @@ ros2 launch slam_toolbox online_async_launch.py use_sim_time:=true
 ```
 
 **Terminal 3: The Navigator**
-Launch Nav2 without a static map to enable dynamic path planning.
+Launch Nav2 without a static map to enable dynamic path planning. *(Note: Nav2 requires absolute paths for configuration files, so we use `$PWD` to auto-fill the path)*.
 ```bash
-ros2 launch nav2_bringup navigation_launch.py use_sim_time:=true params_file:=/home/madkane/ros2_ws/src/clankers_robot_project/my_robot_nav/config/nav2_params.yaml
+ros2 launch nav2_bringup navigation_launch.py use_sim_time:=true params_file:=$PWD/src/my_robot_nav/config/nav2_params.yaml
 ```
 
 **Terminal 4: Visualization**
 Open RViz to monitor the mapping progress.
 ```bash
-rviz2 -d /home/madkane/ros2_ws/src/clankers_robot_project/my_robot_nav/rviz/mapping.rviz
+rviz2 -d src/my_robot_nav/rviz/mapping.rviz
 ```
 
 **Terminal 5: The Autonomous Brain**
@@ -72,11 +72,11 @@ ros2 run rqt_robot_steering rqt_robot_steering
 ```
 
 **Saving the Map:**
-Once the floor plan is fully enclosed in RViz, save it permanently. Run this in a fresh terminal:
+Once the floor plan is fully enclosed in RViz, save it permanently. Run this in a fresh terminal from your workspace root:
 ```bash
-ros2 run nav2_map_server map_saver_cli -f ~/ros2_ws/src/clankers_robot_project/my_robot_nav/maps/delivery_maze_map
+ros2 run nav2_map_server map_saver_cli -f src/my_robot_nav/maps/delivery_maze_map
 ```
-*Note: Ensure the generated `.yaml` file contains the absolute path to the `.pgm` image.*
+*Note: Ensure the generated `.yaml` file contains the absolute path to the `.pgm` image before proceeding to Phase 2.*
 
 ---
 
@@ -90,15 +90,15 @@ ros2 launch my_robot_nav <gazebo_launch_file.py>
 ```
 
 **Terminal 2: Nav2, Map Server & AMCL**
-Boot the entire navigation stack, providing the static map you generated in Phase 1.
+Boot the entire navigation stack, providing the static map you generated in Phase 1. 
 ```bash
-ros2 launch nav2_bringup bringup_launch.py use_sim_time:=true map:=/home/madkane/ros2_ws/src/clankers_robot_project/my_robot_nav/maps/delivery_maze_map.yaml params_file:=/home/madkane/ros2_ws/src/clankers_robot_project/my_robot_nav/config/nav2_params.yaml
+ros2 launch nav2_bringup bringup_launch.py use_sim_time:=true map:=$PWD/src/my_robot_nav/maps/delivery_maze_map.yaml params_file:=$PWD/src/my_robot_nav/config/nav2_params.yaml
 ```
 
 **Terminal 3: Visualization & AMCL Wake-Up**
 Open RViz. **Crucial Step:** You must use the "2D Pose Estimate" button in the RViz toolbar to click and drag the robot's initial starting location on the map. AMCL will not bridge the TF tree until you provide this initial guess.
 ```bash
-rviz2 -d /home/madkane/ros2_ws/src/clankers_robot_project/my_robot_nav/rviz/navigation.rviz
+rviz2 -d src/my_robot_nav/rviz/navigation.rviz
 ```
 
 **Terminal 4: The Delivery & Battery Logic**
