@@ -1,0 +1,29 @@
+# ROS 2 Workspace Directories (In case your repo is at the workspace root)
+build/
+install/
+log/
+
+# Python Caches & Compiled Files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Editor & OS Junk
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ROS 2 & Gazebo Logs / Core Dumps
+*.log
+core
+core.*
+vgcore.*
+
+# Temporary / Swap files
+*.bak
+*.tmp
