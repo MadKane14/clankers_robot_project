@@ -83,7 +83,7 @@ class BatterySimulator(Node):
         msg.data = self.battery_level
         self.battery_pub.publish(msg)
 
-        if self.battery_level < 20.0 and not self.is_charging:
+        if self.battery_level < 100.0 and not self.is_charging:
             self.get_logger().warn(f"LOW BATTERY: {self.battery_level:.1f}%")
 
 def main(args=None):
